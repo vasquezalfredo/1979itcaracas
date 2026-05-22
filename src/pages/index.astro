@@ -1,6 +1,4 @@
 ---
-import { Image } from 'astro:assets';
-import ITCaracasImage from '../ITCaracas.png';
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
@@ -12,7 +10,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<div style="display: flex; justify-content: center; margin: 20px 0;">
-			    <Image src={ITCaracasImage} width={720} height={360} alt="Logo de ITCaracas" />
+			    <Image src={/ITCaracas.png} width={720} height={360} alt="Logo de ITCaracas" />
         </div>
 	</head>
 	<body>
