@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets'; // Importa el componente
 import ITCaracasImage from '../ITCaracas.png';
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
@@ -15,7 +16,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<Header />
 		<main>
 			<h1>ITCaracas tú especialista técnico en línea</h1>
-			<img src={ITCaracasImage.src} width="720" height="360" alt="Logo de ITCaracas" />
+			<Image src={ITCaracasImage} width={720} height={360} alt="Logo de ITCaracas" />
 			<p>
 				Bienvenido al sitio oficial de ITCaracas, una página web dedicada al soporte técnico en Venezuela.
 			</p>
